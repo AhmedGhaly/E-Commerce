@@ -18,7 +18,6 @@ namespace E_Commerce.Controllers
             this.context = context;
         }
 
-
         #region Essa Task
         // Get All
         public IActionResult index()
@@ -176,9 +175,6 @@ namespace E_Commerce.Controllers
 
         // Delete Product 
         #endregion
-
-
-
 
     }
 }
