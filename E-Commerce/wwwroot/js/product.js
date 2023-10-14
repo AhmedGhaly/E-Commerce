@@ -44,3 +44,21 @@ function addToCard(id) {
     //});
 
 
+    function addToFavorite() {  
+    $.ajax({
+        type: "POST",
+    url: "/Favorite/addFavorite",
+    data: {
+    product_id: product_id,
+    user_id: user_id
+            },
+    success: function(response) {
+        console.log("Favorite added successfully.");
+            },
+    error: function(err) {
+        console.error("Error adding to favorite:", err);
+            }
+        });
+    }
+
+
