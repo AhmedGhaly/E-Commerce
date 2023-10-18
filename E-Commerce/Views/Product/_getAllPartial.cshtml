@@ -54,6 +54,14 @@
                                 
                             }
                         </button>
+                        <div class="d-flex justify-content-center">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a asp-action="UpdateProduct" asp-route-productId="@item.Id" class="btn btn-primary">
+                                    <i class="fas fa-pen"></i> Update Product
+                                </a>
+                            }
+                        </div>
 @*                         <button>
                             <i onclick="addToCard(@item.Id)"
                           class="fas fa-shopping-cart fa-lg" 
